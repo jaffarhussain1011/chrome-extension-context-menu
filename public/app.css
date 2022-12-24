@@ -1,0 +1,183 @@
+#patible-cx-profile-links * {
+  font-family: "Inter";
+}
+.patible-cx-contactText {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+}
+.patible-cx-wrapper {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  overflow-y: auto;
+}
+.patible-cx-left-content {
+  /*width: 60%;*/
+  flex: 1 1 auto;
+  /*font-family: "Inter", sans-serif;*/
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.patible-cx-right-content {
+  width: 31%;
+  /*font-family: "Inter", sans-serif;*/
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.patible-cx-alignment {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+.patible-cx-text-align {
+  margin-right: 5px;
+}
+.patible-cx-text-align:hover {
+  color: #3b5aff;
+  cursor: pointer;
+}
+.patible-cx-remove {
+  pointer-events: none;
+}
+.patible-cx-copy-icon {
+  margin-left: 0.3rem;
+  margin-right: 0.3rem;
+  display: none;
+}
+.patible-cx-copy-icon-approve {
+  display: inline;
+  transition: 2s ease;
+}
+
+.patible-cx-copy-status {
+  position: absolute;
+  pointer-events: none;
+  font-size: 13px;
+  transition: opacity 0.7s ease;
+  display: inline-flex;
+  gap: 2px;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transform: scale(0);
+  color: #39c157;
+}
+
+.patible-cx-copy-status.approve {
+  position: static;
+  pointer-events: all;
+  transform: scale(1);
+  opacity: 1;
+}
+.patible-cx-for-relative {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.patible-cx-main-content {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.patible-cx-images-view {
+  height: 24px;
+  width: 24px;
+  position: relative;
+}
+.patible-cx-see-all {
+  color: #3b5aff;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 140%;
+}
+.patible-cx-see-all:hover {
+  color: rgba(59, 90, 255, 0.7);
+}
+.patible-cx-verified-image {
+  position: absolute;
+  left: 1.2rem;
+  bottom: 13px;
+}
+@media only screen and (max-width: 690px) {
+  .patible-cx-left-content {
+    width: auto;
+  }
+  .patible-cx-right-content {
+    width: auto;
+  }
+}
+
+.patible-cx-phone-details:hover {
+  color: #3b5aff;
+  cursor: pointer;
+}
+.patible-cx-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 0px 20px;
+  /*height: 184px;*/
+}
+.patible-cx-modal-body {
+  min-width: 300px;
+}
+
+.patible-cx-float-left {
+  float: left;
+  /* margin-left: auto; */
+}
+
+.patible-cx-float-right {
+  float: right;
+  margin-left: auto;
+}
+
+.patible-cx-modal-header,
+.patible-cx-modal-body {
+  display: flex;
+}
+
+.patible-cx-container {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.patible-cx-content {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 700px;
+}
+.patible-cx-div {
+  padding: 1rem;
+  display: flex;
+  background: grey;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.patible-cx-bottom {
+  margin-top: auto;
+}
+
+.patible-cx-close {
+  cursor: pointer;
+}
+
+.ReactModal__Overlay--after-open {
+  z-index: 9999;
+}
